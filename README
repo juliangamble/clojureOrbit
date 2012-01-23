@@ -22,4 +22,10 @@ Commands:
   t toggle trails
   <space>  Center the sun.
 
+-----------------------------------------
+
+This version packages it up for Web Start. 
+
+The point here is to add Java Web start to enable it to be demoed to a wider audience
+and promote the clojure community.
 

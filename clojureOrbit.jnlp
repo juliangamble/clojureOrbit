@@ -1,0 +1,16 @@
+<jnlp codebase="file:///C:/Users/julian/Documents/Projects/clojureOrbit/" 
+      href="clojureOrbit.jnlp"> 
+  <information>
+    <title>Clojure Orbit</title>
+    <vendor>Machiavellian</vendor>
+  </information>
+  <resources>
+    <j2se version="1.4+" />
+    <jar href="clojureOrbit.jar"/>
+  </resources>
+  <application-desc main-class="orbitmain"/>
+  <offline-allowed/>
+  <security>
+    <all-permissions/>
+  </security>
+</jnlp>
