@@ -1,3 +1,15 @@
+-----------------------------------------
+You can see the demo here:
+http://juliangamble.com/blog/2012/01/23/clojure-gui-demo-of-planetary-orbitals/
+
+This version packages it up for Web Start. 
+
+The point here is to add Java Web start to enable it to be demoed to a wider audience
+and promote the Clojure community.
+
+-----------------------------------------
+
+
 Simple Orbital Simulator written in Clojure.
 Robert C. Martin
 2 Jun 2010
@@ -23,9 +35,4 @@ Commands:
   <space>  Center the sun.
 
 -----------------------------------------
-
-This version packages it up for Web Start. 
-
-The point here is to add Java Web start to enable it to be demoed to a wider audience
-and promote the clojure community.
 
