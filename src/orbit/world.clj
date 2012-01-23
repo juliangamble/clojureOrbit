@@ -9,7 +9,7 @@
 
 (import-static java.awt.event.KeyEvent VK_LEFT VK_RIGHT VK_UP VK_DOWN)
 
-(def center   (position/make 500 500))
+(def center   (position/make 250 250))
 (def running? (atom true))
 
 (defstruct controls :magnification :center :trails :clear)
@@ -90,7 +90,7 @@
       (handle-key (.getKeyChar e) world controls)
       (.repaint this))
     (getPreferredSize []
-      (Dimension. 1000 1000))
+      (Dimension. 500 500))
     (keyReleased [e])
     (keyTyped [e])))
 
@@ -117,14 +117,14 @@
 (defn create-world []
   (let [v0 (vector/make)
         sun (object/make center 150 (vector/make 0 0) v0 "sun")]
-    (loop [world [sun] n 500]
+    (loop [world [sun] n 250]
       (if (zero? n)
         world
         (recur (conj world (random-object sun n)) (dec n))))))
 
 (defn world-frame []
   (let [controls (atom (struct-map controls
-                        :magnification 1.0
+                        :magnification 0.5
                         :center center
                         :trails false
                         :clear false))
